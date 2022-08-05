@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Failed Suite" parallel="tests" thread-count="8">
+    
+  <parameter name="browser" value="Firefox"/>
+  
+  <test name="Home Page Tests">
+    <parameter name="sheetname" value="Home Page Tests"/>
+    <classes>
+      <class name="com.swiftshop.tests.Home Page Tests">
+        <methods>
+          <include name="validateHomePage_LoggedInUser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

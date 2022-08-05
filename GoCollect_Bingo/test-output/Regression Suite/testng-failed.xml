@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Regression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="sheetname" value="TrucksTests"/>
+  <listeners>
+    <listener class-name="com.gocollect.utilities.AnnotationTransformer"/>
+  </listeners>
+  <test name="Truck Page Tests">
+    <parameter name="sheetname" value="TrucksTests"/>
+    <classes>
+      <class name="com.gocollect.tests.TrucksTests">
+        <methods>
+          <include name="search_TruckRego"/>
+        </methods>
+      </class> <!-- com.gocollect.tests.TrucksTests -->
+    </classes>
+  </test> <!-- Truck Page Tests -->
+  <test parallel="tests" name="Truck Page Tests(failed)">
+    <parameter name="sheetname" value="TrucksTests"/>
+    <classes>
+      <class name="com.gocollect.tests.TrucksTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="search_TruckRego"/>
+          <include name="killProcesses"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.gocollect.tests.TrucksTests -->
+    </classes>
+  </test> <!-- Truck Page Tests(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

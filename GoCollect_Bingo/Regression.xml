@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" thread-count="1" preserve-order="true" parallel="tests">
+
+	<listeners>
+		<!-- <listener class-name="com.gocollect.utilities.Reporting" />-->
+		<listener class-name="com.gocollect.utilities.AnnotationTransformer" />
+	</listeners>
+
+	<parameter name="browser" value="Chrome"></parameter>
+
+	<!-- <test name="Login Tests">
+		<parameter name="sheetname" value="LoginTests"></parameter>
+		<classes>
+			<class name="com.gocollect.tests.LoginTests">
+				<methods>
+					<include name="validateUserLogin WithValidCredentials" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Home Page Tests">
+		<parameter name="sheetname" value="HomePageTests"></parameter>
+		<classes>
+			<class name="com.gocollect.tests.HomePageTests">
+				<methods>
+					<include name="validateHomePage_LoggedInUser" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+-->
+	<test name="Drives Page Tests">
+		<parameter name="sheetname" value="DriversTests"></parameter>
+		<classes>
+			<class name="com.gocollect.tests.DriversTests">
+				<methods>
+					<include name="validateDrivers_Searched_successfully" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="Jobs Page Tests">
+		<parameter name="sheetname" value="JobsTests"></parameter>
+		<classes>
+			<class name="com.gocollect.tests.JobsTests">
+				<methods>
+					<include name="validateJobPage_DelPickJob" />
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	<!-- <test name="Council permit page Tests">
+		<parameter name="sheetname" value="CouncilPermitTests"></parameter>
+		<classes>
+			<class name="com.gocollect.tests.CouncilPermitTests">
+				<methods>
+					<include name="validateCouncilPage_launch" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	<test name="Sale support Page Tests">
+		<parameter name="sheetname" value="SalesSupportTests"></parameter>
+		<classes>
+			<class name="com.gocollect.tests.SalesSupportTests">
+				<methods>
+					<include name="validateSaleSupportPage_home" />
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+</suite>

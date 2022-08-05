@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Failed Suite" parallel="tests" thread-count="8">
+    
+  <parameter name="browser" value="Firefox"/>
+  
+  <test name="Jobs Page Tests">
+    <parameter name="sheetname" value="Jobs Page Tests"/>
+    <classes>
+      <class name="com.swiftshop.tests.Jobs Page Tests">
+        <methods>
+          <include name="validateJobPage_scheduled"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
